@@ -6,8 +6,8 @@ body {
 }
 
 .login-box {
-    width: 320px;
-    height: 420px;
+    width: 300px;
+    height: 350px;
     color: #000;
     background: #fff;
     top: 50%;
@@ -20,10 +20,10 @@ body {
 
 .login-box .avatar {
     width: 100px;
-    height: 100px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: -50px;
+    top: -30px;
     left: calc(50% - 50px);
 }
 
@@ -34,7 +34,7 @@ body {
 
 .login-box h1 {
     margin: 0;
-    padding: 0 0 50px;
+    padding: 0 0 20px;
     text-align: center;
     font-size: 30px;
 }
@@ -65,3 +65,4 @@ body {
 .login-box input[type="submit"]:hover {
     background-color: orange;
 }
+
