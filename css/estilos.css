@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/imagen\ de\ fondo.jpg) no-repeat center top;
+    background: url(../img/imagen\ de\ fondo1.jpg) no-repeat center top;
     background-size: cover;
 }
 
@@ -42,14 +42,6 @@ body {
 .login-box input {
     width: 100%;
     margin-bottom: 20px;
-}
-
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
 }
 
 .login-box input[type="submit"] {
