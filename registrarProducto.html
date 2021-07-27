@@ -34,14 +34,41 @@
         </div>
     </nav>
 
-    <form action="recibeDatos.php" method="POST" onsubmit="return validaCampos()" >
+    <div class="text-center">
+        <h1>Registre Producto</h1>
+        <form action="recibeDatos.php" method="POST" onsubmit="return validaCampos()">
 
-        <label for="">Ingrese nombre</label>
-        <input type="text" name="nombre" id="textNombre">
-        <br>
-        <input type="submit" value="Enviar Datos">
+            <label for="">Ingrese nombre</label>
+            <input type="text" name="nombre" id="textNombre">
+            <br>
+            <select name="categoria" id="idCategoria">
+                <option value="">seleccione categoria</option>
+                <option value="c1">categoria1</option>
+                <option value="c2">categoria2</option>
+                <option value="c3">categoria3</option>
+            </select>
+            <br>
+            <select name="sucursal" id="idSucusal">
+                <option value="">seleccione sucursal</option>
+                <option value="s1">sucursal1</option>
+                <option value="s2">sucursal2</option>
+                <option value="s3">sucursal3</option>
+            </select>
+            <br>
+            <label for="">ingrese descripcion del producto</label>
+            <br>
+            <textarea name="descripcion" id="textComentarios" cols="30" rows="5"></textarea>
+            <br>
+            <label for="">cantidad</label>
+            <input type="number" name="cantidad" id="numCantidad">
+            <br>
+            <label for="">Precio venta</label>
+            <input type="text" name="precio" id="textPrecio">
+            <br>
+            <input type="submit" value="Enviar Datos">
 
-    </form>
+        </form>
+    </div>
 
 </body>
 

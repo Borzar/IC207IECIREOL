@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/validaciones.js"></script>
     <title>Software Gestion de Stock</title>
 </head>
 <!-- MENU -->
+
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
         <div class="container-fluid">
@@ -20,8 +23,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-light" aria-current="page" href="registrarProducto.html">Registrar Producto</a>
-                    <a class="nav-link text-light" aria-current="page" href="consultaProducto.html">Consulta de Productos</a>
+                    <a class="nav-link text-light" aria-current="page" href="registrarProducto.html">Registrar
+                        Producto</a>
+                    <a class="nav-link text-light" aria-current="page" href="consultaProducto.html">Consulta de
+                        Productos</a>
                     <a class="nav-link text-light" href="eliminarProducto.html">Eliminar Producto</a>
                     <a class="nav-link text-light" href="actualizarProducto.html">Actualizar Producto</a>
                     <a class="nav-link text-light" href="login.html">Login</a>
@@ -29,12 +34,28 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="text-center">
         <h1>Consultar Producto</h1>
+        <form action="" method="POST" onsubmit="return validaCampos()">
+            <label for="">consultar producto por codigo</label>
+            <input type="text" name="codigo" id="textCodigo">
+            <br>
+            <label for="">consultar producto por nombre</label>
+            <input type="text" name="nombre" id="textNombre">
+            <br>
+            <select name="sucursal" id="idSucusal">
+                <option value="">seleccione sucursal</option>
+                <option value="s1">sucursal1</option>
+                <option value="s2">sucursal2</option>
+                <option value="s3">sucursal3</option>
+            </select>
+            <br>
+            <input type="submit" value="Consultar producto">
+        </form>
+
     </div>
 
 </body>
 
-</html> 
-
+</html>

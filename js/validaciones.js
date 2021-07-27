@@ -4,6 +4,7 @@ function validaCampos(){
 
     if(nombre.length == 0 | /\s/.test(nombre)){
         alert("debe ingresar nombre");
+        document.getElementById("textNombre").focus();
         return false;
     }
 
